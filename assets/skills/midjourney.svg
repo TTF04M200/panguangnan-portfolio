@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0C10"/>
+      <stop offset="0.55" stop-color="#12100B"/>
+      <stop offset="1" stop-color="#1A1408"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD24D"/>
+      <stop offset="1" stop-color="#FFC300"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26200F"/>
+      <stop offset="1" stop-color="#161208"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g stroke="#2B2310" stroke-width="1">
+    <path d="M0 220 H1600 M0 440 H1600 M0 660 H1600 M0 880 H1600"/>
+    <path d="M220 0 V1000 M440 0 V1000 M660 0 V1000 M880 0 V1000 M1100 0 V1000 M1320 0 V1000"/>
+  </g>
+  <circle cx="1290" cy="180" r="120" fill="#FFC300" opacity="0.16" filter="url(#glow)"/>
+  <circle cx="420" cy="820" r="160" fill="#FFC300" opacity="0.10" filter="url(#glow)"/>
+  <rect x="60" y="64" width="8" height="8" rx="2" fill="#FFC300"/>
+  <text x="84" y="73" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="22" letter-spacing="6" fill="#8A7B4A">AI IMAGE · MIDJOURNEY V8.2</text>
+  <text x="58" y="248" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="96" font-weight="800" fill="#F5F0DC">MIDJOURNEY</text>
+  <text x="58" y="352" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="96" font-weight="800" fill="url(#acc)">PROMPT LAB</text>
+  <text x="62" y="430" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="34" fill="#A89A6C">视觉约束提取 · 结构重组 · 7 维评分闭环</text>
+  <g transform="translate(56, 500)">
+    <g transform="translate(0,0)"><rect width="250" height="56" rx="28" fill="#221C0D" stroke="#FFC300" stroke-opacity="0.45"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#E8DFBC">风格化提示词</text></g>
+    <g transform="translate(272,0)"><rect width="250" height="56" rx="28" fill="#221C0D" stroke="#3A3220"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#C7C0A6">单变量纠偏</text></g>
+    <g transform="translate(0,76)"><rect width="250" height="56" rx="28" fill="#221C0D" stroke="#3A3220"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#C7C0A6">故障字典查错</text></g>
+    <g transform="translate(272,76)"><rect width="250" height="56" rx="28" fill="#221C0D" stroke="#3A3220"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#C7C0A6">中英对照拆解</text></g>
+  </g>
+  <g transform="translate(1010, 470)">
+    <rect x="60" y="70" width="480" height="120" rx="16" fill="#10161F" stroke="#3A3220"/>
+    <text x="90" y="120" font-family="'IBM Plex Mono','Cascadia Code',monospace" font-size="28" fill="#8A7B4A">&gt; PROMPT</text>
+    <rect x="300" y="96" width="3" height="34" fill="#FFC300">
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <g transform="translate(60, 250)">
+      <text x="0" y="20" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="22" fill="#5E6A84">SUBJECT</text>
+      <rect x="150" y="0" width="330" height="28" rx="6" fill="url(#tile)" stroke="#3A3220"/>
+      <text x="160" y="20" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="16" fill="#E8DFBC">角色 / 主体描述</text>
+      <text x="0" y="70" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="22" fill="#5E6A84">STYLE</text>
+      <rect x="150" y="50" width="330" height="28" rx="6" fill="url(#tile)" stroke="#3A3220"/>
+      <text x="160" y="70" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="16" fill="#E8DFBC">画风 / 媒介 / 光</text>
+      <text x="0" y="120" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="22" fill="#5E6A84">SCORE</text>
+      <g>
+        <rect x="150" y="100" width="240" height="12" rx="6" fill="#161208" stroke="#3A3220"/>
+        <rect x="152" y="102" width="180" height="8" rx="4" fill="url(#acc)"/>
+        <rect x="150" y="128" width="240" height="12" rx="6" fill="#161208" stroke="#3A3220"/>
+        <rect x="152" y="130" width="120" height="8" rx="4" fill="url(#acc)" opacity="0.6"/>
+        <rect x="150" y="156" width="240" height="12" rx="6" fill="#161208" stroke="#3A3220"/>
+        <rect x="152" y="158" width="200" height="8" rx="4" fill="url(#acc)" opacity="0.8"/>
+      </g>
+    </g>
+    <text x="300" y="470" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#FFD24D">7-DIM SCORING · V8.2</text>
+  </g>
+  <rect x="56" y="930" width="260" height="4" rx="2" fill="url(#acc)"/>
+</svg>

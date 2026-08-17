@@ -1,0 +1,296 @@
+{
+  "profile": {
+    "name": "潘光楠",
+    "title": "播音与主持艺术专业应届毕业生",
+    "bio": "播音与主持艺术专业应届毕业生，主修摄影摄像与 AIGC 内容创作。有直播、摄影、短剧等一线内容生产经验，累计保障 130+ 场直播稳定进行；能独立完成产品渲染、AI 生图与视频创作，擅长用 Seedance / Midjourney 提示词工程控制生成质量，并用经典剧作方法为 AI 短片搭好叙事结构；习惯把现场经验沉淀成可复用的流程与工具。希望在内容产品与 AIGC 影像工具方向持续深耕。",
+    "skills": [
+      "摄影摄像",
+      "AIGC 内容创作",
+      "Codex",
+      "Midjourney",
+      "ComfyUI",
+      "DaVinci 调色",
+      "Photoshop",
+      "Lightroom",
+      "节目策划",
+      "直播技术",
+      "Seedance 视频提示词",
+      "Midjourney 提示词",
+      "AI 剧本创作"
+    ],
+    "contact": {
+      "email": "1494918031@qq.com",
+      "phone": "133 2179 0172",
+      "wechat": {
+        "qr": "assets/images/wechat-qr.png",
+        "id": "13321790172",
+        "hint": "扫码加微信"
+      }
+    },
+    "heroImage": "assets/images/hero.jpg"
+  },
+  "groups": {
+    "AI 产品": "portrait",
+    "AI 故事分镜": "story",
+    "人像写真": "portrait",
+    "场景与建筑": "landscape"
+  },
+  "plugins": [
+    {
+      "id": "banana-bridge",
+      "name": "Banana Bridge",
+      "description": "面向 Photoshop 的 AI 创作桥接面板：3D 镜头控制、200+ 面部精修预设、场景与音效素材，把高频修图与生成流程收进一个可停靠面板。",
+      "cover": "assets/plugins/banana-bridge.svg",
+      "tags": [
+        "Photoshop",
+        "AI 工作流"
+      ],
+      "download": "assets/plugins/banana-bridge-README.md",
+      "logic": [
+        {
+          "name": "输入",
+          "desc": "Photoshop 图层 / 选区"
+        },
+        {
+          "name": "镜头控制",
+          "desc": "3D 推拉摇移 · 实时构图"
+        },
+        {
+          "name": "面部精修",
+          "desc": "200+ 预设一键应用"
+        },
+        {
+          "name": "素材合成",
+          "desc": "场景与音效拖入即用"
+        },
+        {
+          "name": "输出",
+          "desc": "一键导出成片"
+        }
+      ]
+    },
+    {
+      "id": "blender-bridge",
+      "name": "Blender 材质桥接",
+      "description": "打通 RizomUV、Substance Painter 与 Coat 的 Blender 材质工作流插件，内置 Material Builder 与偏好管理，减少跨软件搬运。",
+      "cover": "assets/plugins/blender-bridge.svg",
+      "tags": [
+        "Blender",
+        "材质工作流"
+      ],
+      "download": "assets/plugins/blender-bridge-README.md",
+      "logic": [
+        {
+          "name": "输入",
+          "desc": "模型 / 材质槽"
+        },
+        {
+          "name": "UV 展开",
+          "desc": "RizomUV 自动展 UV"
+        },
+        {
+          "name": "贴图烘焙",
+          "desc": "Substance Painter PBR"
+        },
+        {
+          "name": "材质组装",
+          "desc": "Material Builder 节点"
+        },
+        {
+          "name": "输出",
+          "desc": "回传 Blender · 偏好记忆"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "prod-01",
+      "group": "AI 产品",
+      "title": "N5 · 数码产品主图",
+      "file": "assets/images/prod-01.jpg",
+      "tags": [
+        "数码",
+        "产品"
+      ]
+    },
+    {
+      "id": "prod-02",
+      "group": "AI 产品",
+      "title": "九阳智能电饭煲 · 电商主图",
+      "file": "assets/images/prod-02.jpg",
+      "tags": [
+        "家电",
+        "电商"
+      ]
+    },
+    {
+      "id": "prod-03",
+      "group": "AI 产品",
+      "title": "九阳破壁豆浆机 · 场景图",
+      "file": "assets/images/prod-03.jpg",
+      "tags": [
+        "家电",
+        "场景"
+      ]
+    },
+    {
+      "id": "prod-04",
+      "group": "AI 产品",
+      "title": "移动电源 · 电商主图",
+      "file": "assets/images/prod-04.jpg",
+      "tags": [
+        "数码",
+        "电商"
+      ]
+    },
+    {
+      "id": "prod-05",
+      "group": "AI 产品",
+      "title": "冈本 0.01 · 品牌视觉",
+      "file": "assets/images/prod-05.jpg",
+      "tags": [
+        "品牌",
+        "视觉"
+      ]
+    },
+    {
+      "id": "prod-06",
+      "group": "AI 产品",
+      "title": "气垫粉底 · 美妆主图",
+      "file": "assets/images/prod-06.jpg",
+      "tags": [
+        "美妆",
+        "电商"
+      ]
+    },
+    {
+      "id": "prod-07",
+      "group": "AI 产品",
+      "title": "一体式水冷 · 硬件视觉",
+      "file": "assets/images/prod-07.jpg",
+      "tags": [
+        "硬件",
+        "渲染"
+      ]
+    },
+    {
+      "id": "prod-08",
+      "group": "AI 产品",
+      "title": "Nike 运动鞋 · 氛围视觉",
+      "file": "assets/images/prod-08.jpg",
+      "tags": [
+        "运动",
+        "氛围"
+      ]
+    },
+    {
+      "id": "prod-09",
+      "group": "AI 产品",
+      "title": "电竞鼠标 · 产品主图",
+      "file": "assets/images/prod-09.jpg",
+      "tags": [
+        "外设",
+        "产品"
+      ]
+    },
+    {
+      "id": "story-01",
+      "group": "AI 故事分镜",
+      "title": "冰原战纪",
+      "file": "assets/images/story-01.jpg",
+      "tags": [
+        "暗黑奇幻",
+        "史诗"
+      ],
+      "ratio": "3 / 1"
+    },
+    {
+      "id": "story-03",
+      "group": "AI 故事分镜",
+      "title": "终点时刻",
+      "file": "assets/images/story-03.jpg",
+      "tags": [
+        "概念设计",
+        "3D"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": "video-01",
+      "title": "VK75 键盘 · AI 广告短片",
+      "file": "assets/videos/vk75-keyboard.mp4",
+      "cover": "assets/videos/vk75-cover.jpg",
+      "description": "30 秒键盘产品广告：从键帽特写、敲击节奏到氛围光的完整镜头叙事。"
+    },
+    {
+      "id": "video-02",
+      "title": "盼盼花生牛奶 · AI 广告短片",
+      "file": "assets/videos/panpan-milk.mp4",
+      "cover": "assets/videos/panpan-cover.jpg",
+      "description": "15 秒食品广告：以暖调光影与运镜突出产品的食欲感与品质感。"
+    },
+    {
+      "id": "video-03",
+      "title": "Y2K 复古 MV · AI 影像实验",
+      "file": "assets/videos/y2k-mv.mp4",
+      "cover": "assets/videos/y2k-mv-cover.jpg",
+      "description": "以 Y2K 复古美学重构的偶像 MV 片段：CRT 电视、塑料薄膜与铁链构成超现实空间，粉紫蓝霓虹色调贯穿全片。"
+    },
+    {
+      "id": "video-04",
+      "title": "圣诞橘猫 · AI 治愈短片",
+      "file": "assets/videos/christmas-cat.mp4",
+      "cover": "assets/videos/christmas-cat-cover.jpg",
+      "description": "超写实 AI 生成治愈短片：戴着圣诞格纹围巾的橘猫在暖光壁炉前安睡，柔焦光影与毛发光质营造冬日氛围。",
+      "tall": true
+    },
+    {
+      "id": "video-05",
+      "title": "屏幕内外 · AI 概念广告",
+      "file": "assets/videos/screen-world.mp4",
+      "cover": "assets/videos/screen-world-cover.jpg",
+      "description": "15 秒 AI 概念广告：手持手机穿行于混乱会议室，屏幕内外的秩序与失控构成反差叙事，结尾回到产品本体。"
+    },
+    {
+      "id": "video-06",
+      "title": "1UP 时刻 · AI 像素风短片",
+      "file": "assets/videos/pixel-1up.mp4",
+      "cover": "assets/videos/pixel-1up-cover.jpg",
+      "description": "13 秒 AI 概念短片：客厅里悬浮的 ROOM.EXE 弹窗与 1UP 像素特效，让现实空间被复古游戏元素包围。"
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-seedance",
+      "name": "Seedance 视频提示词",
+      "description": "把一场戏翻译成可直接生成的视频提示词：主体、风格、时间线、BGM 与约束五段结构，中英双语，覆盖动作、场景与对话三类镜头。",
+      "tags": [
+        "视频生成",
+        "提示词"
+      ],
+      "cover": "assets/skills/seedance.svg"
+    },
+    {
+      "id": "skill-mj",
+      "name": "Midjourney 提示词",
+      "description": "Midjourney V8.2 提词方法论：从口语画面构想提炼视觉约束，重组为无冲突、可复现的执行提示词，出图后按 7 维评分与故障字典逐项修正。",
+      "tags": [
+        "图像生成",
+        "V8.2"
+      ],
+      "cover": "assets/skills/midjourney.svg"
+    },
+    {
+      "id": "skill-script",
+      "name": "AI 剧本创作",
+      "description": "以麦基、坎贝尔与亚里士多德的剧作方法完成剧本、分场、节拍表与人物塑造，输出好莱坞格式剧本，支持中英双语脚本。",
+      "tags": [
+        "剧作",
+        "叙事"
+      ],
+      "cover": "assets/skills/screenwriting.svg"
+    }
+  ]
+}

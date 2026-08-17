@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0C10"/>
+      <stop offset="0.55" stop-color="#0D1118"/>
+      <stop offset="1" stop-color="#101828"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4FA3F0"/>
+      <stop offset="1" stop-color="#1E88E5"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18212E"/>
+      <stop offset="1" stop-color="#10151F"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g stroke="#1B2330" stroke-width="1">
+    <path d="M0 220 H1600 M0 440 H1600 M0 660 H1600 M0 880 H1600"/>
+    <path d="M220 0 V1000 M440 0 V1000 M660 0 V1000 M880 0 V1000 M1100 0 V1000 M1320 0 V1000"/>
+  </g>
+  <circle cx="1290" cy="180" r="120" fill="#1E88E5" opacity="0.16" filter="url(#glow)"/>
+  <circle cx="420" cy="820" r="160" fill="#1E88E5" opacity="0.10" filter="url(#glow)"/>
+  <rect x="60" y="64" width="8" height="8" rx="2" fill="#1E88E5"/>
+  <text x="84" y="73" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="22" letter-spacing="6" fill="#5E6A84">AI VIDEO · SEEDANCE 2.5</text>
+  <text x="58" y="248" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="96" font-weight="800" fill="#F5F8FF">SEEDANCE</text>
+  <text x="58" y="352" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="96" font-weight="800" fill="url(#acc)">VIDEO PROMPT</text>
+  <text x="62" y="430" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="34" fill="#9AA7C2">主体 · 风格 · 时间线 · BGM · 约束</text>
+  <g transform="translate(56, 500)">
+    <g transform="translate(0,0)"><rect width="250" height="56" rx="28" fill="#151C2B" stroke="#1E88E5" stroke-opacity="0.45"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#C7D2E8">中英双语提示词</text></g>
+    <g transform="translate(272,0)"><rect width="250" height="56" rx="28" fill="#151C2B" stroke="#243049"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#C7D2E8">动作 / 场景 / 对话</text></g>
+    <g transform="translate(0,76)"><rect width="250" height="56" rx="28" fill="#151C2B" stroke="#243049"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#C7D2E8">15s / 30s 规格适配</text></g>
+    <g transform="translate(272,76)"><rect width="250" height="56" rx="28" fill="#151C2B" stroke="#243049"/><text x="125" y="35" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24" fill="#C7D2E8">镜头衔接与连续性</text></g>
+  </g>
+  <g transform="translate(1040, 480)">
+    <rect x="40" y="60" width="440" height="250" rx="18" fill="#10161F" stroke="#243049"/>
+    <polygon points="120,120 250,185 120,250" fill="url(#acc)" filter="url(#glow)"/>
+    <g stroke="#2A3650" stroke-width="3">
+      <line x1="300" y1="130" x2="440" y2="130"/>
+      <line x1="300" y1="170" x2="440" y2="170"/>
+      <line x1="300" y1="210" x2="400" y2="210"/>
+    </g>
+    <g>
+      <rect x="60" y="360" width="88" height="40" rx="8" fill="#151C2B" stroke="#1E88E5" stroke-opacity="0.6"/>
+      <rect x="172" y="360" width="88" height="40" rx="8" fill="#151C2B" stroke="#243049"/>
+      <rect x="284" y="360" width="88" height="40" rx="8" fill="#151C2B" stroke="#243049"/>
+      <rect x="396" y="360" width="88" height="40" rx="8" fill="#151C2B" stroke="#243049"/>
+    </g>
+    <text x="300" y="448" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#4FA3F0">SHOT 01 · 02 · 03 · 04</text>
+  </g>
+  <rect x="56" y="930" width="260" height="4" rx="2" fill="url(#acc)"/>
+</svg>
