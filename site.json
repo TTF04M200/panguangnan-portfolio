@@ -33,7 +33,9 @@
     "AI 产品": "portrait",
     "AI 故事分镜": "story",
     "人像写真": "portrait",
-    "场景与建筑": "landscape"
+    "场景与建筑": "landscape",
+    "电商 · 主视觉": "portrait",
+    "电商 · 详情页": "portrait"
   },
   "plugins": [
     {
@@ -291,6 +293,148 @@
         "叙事"
       ],
       "cover": "assets/skills/screenwriting.svg"
+    }
+  ],
+  "ecommerce": [
+    {
+      "id": "ec-kv-01",
+      "group": "电商 · 主视觉",
+      "title": "敷尔佳精华油 · 主视觉 01",
+      "file": "assets/ecommerce/kv-01.jpg",
+      "tags": [
+        "敷尔佳",
+        "主视觉"
+      ]
+    },
+    {
+      "id": "ec-kv-02",
+      "group": "电商 · 主视觉",
+      "title": "敷尔佳精华油 · 主视觉 02",
+      "file": "assets/ecommerce/kv-02.jpg",
+      "tags": [
+        "敷尔佳",
+        "主视觉"
+      ]
+    },
+    {
+      "id": "ec-kv-03",
+      "group": "电商 · 主视觉",
+      "title": "敷尔佳精华油 · 主视觉 03",
+      "file": "assets/ecommerce/kv-03.jpg",
+      "tags": [
+        "敷尔佳",
+        "主视觉"
+      ]
+    },
+    {
+      "id": "ec-kv-04",
+      "group": "电商 · 主视觉",
+      "title": "敷尔佳精华油 · 主视觉 04",
+      "file": "assets/ecommerce/kv-04.jpg",
+      "tags": [
+        "敷尔佳",
+        "主视觉"
+      ]
+    },
+    {
+      "id": "ec-kv-05",
+      "group": "电商 · 主视觉",
+      "title": "敷尔佳精华油 · 主视觉 05",
+      "file": "assets/ecommerce/kv-05.jpg",
+      "tags": [
+        "敷尔佳",
+        "主视觉"
+      ]
+    },
+    {
+      "id": "ec-m-01",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 01",
+      "file": "assets/ecommerce/m-01.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-02",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 02",
+      "file": "assets/ecommerce/m-02.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-03",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 03",
+      "file": "assets/ecommerce/m-03.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-04",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 04",
+      "file": "assets/ecommerce/m-04.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-05",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 05",
+      "file": "assets/ecommerce/m-05.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-06",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 06",
+      "file": "assets/ecommerce/m-06.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-07",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 07",
+      "file": "assets/ecommerce/m-07.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-08",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 08",
+      "file": "assets/ecommerce/m-08.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
+    },
+    {
+      "id": "ec-m-09",
+      "group": "电商 · 详情页",
+      "title": "敷尔佳精华油 · 详情页 09",
+      "file": "assets/ecommerce/m-09.jpg",
+      "tags": [
+        "敷尔佳",
+        "详情页"
+      ]
     }
   ]
 }

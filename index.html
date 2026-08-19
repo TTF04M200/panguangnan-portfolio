@@ -160,152 +160,19 @@
             </button>
           </article>
 
-          <article class="folder-card" id="folder-notes" data-folder="notes">
-            <span class="folder-tab" aria-hidden="true">NOTES</span>
+          <article class="folder-card" id="folder-ecommerce" data-folder="ecommerce">
+            <span class="folder-tab" aria-hidden="true">ECOMMERCE</span>
             <button type="button" class="folder-head" aria-expanded="false">
-              <span class="folder-cover" data-cover="notes"></span>
+              <span class="folder-cover" data-cover="ecommerce"></span>
               <span class="folder-meta">
-                <span class="folder-tag" data-tag="notes">3 篇创作随笔</span>
-                <span class="folder-title">创作手记</span>
-                <span class="folder-desc">工作流复盘与创作随笔。点击卡片，阅读全文。</span>
+                <span class="folder-tag" data-tag="ecommerce">14 张电商视觉</span>
+                <span class="folder-title">电商视觉</span>
+                <span class="folder-desc">品牌电商主视觉与详情页设计。展开后可点击任意图片查看大图。</span>
                 <span class="folder-open-hint"><i aria-hidden="true">＋</i>全屏打开</span>
               </span>
             </button>
           </article>
         </div>
-                <template id="notes-template">
-          <ul class="notes-grid">
-            <li class="note-card" data-note="1" tabindex="0" role="button" aria-label="阅读笔记：一支 AI 广告短片的可控交付">
-              <p class="note-meta">工作流 · 复盘 <span class="note-meta-slash" aria-hidden="true">/</span> 2026.04</p>
-              <h3 class="note-title">一支 AI 广告短片的可控交付</h3>
-              <p class="note-desc">从一句无法执行的 brief，到 4 轮迭代、14 个废镜头——一支 30 秒广告如何守住确定性。</p>
-              <p class="note-read"><span class="note-read-time">06 MIN READ</span><span class="note-more">阅读笔记 →</span></p>
-            </li>
-            <li class="note-card note-card--compact" data-note="2" tabindex="0" role="button" aria-label="阅读笔记：把流程收进面板：Banana Bridge">
-              <p class="note-meta">开发 · 工具 <span class="note-meta-slash" aria-hidden="true">/</span> 2026.06</p>
-              <h3 class="note-title">把流程收进面板：Banana Bridge</h3>
-              <p class="note-desc">把 200+ 面部精修预设、3D 镜头控制与素材合成装进同一个面板，让 AI 输出可复现。</p>
-              <p class="note-read"><span class="note-read-time">05 MIN READ</span><span class="note-more">阅读笔记 →</span></p>
-            </li>
-            <li class="note-card" data-note="3" tabindex="0" role="button" aria-label="阅读笔记：130 场直播教会我的确定性">
-              <p class="note-meta">随笔 · 迁移 <span class="note-meta-slash" aria-hidden="true">/</span> 2026.08</p>
-              <h3 class="note-title">130 场直播教会我的「确定性」</h3>
-              <p class="note-desc">娱乐直播与 AI 创作看似无关，却共享同一种底层能力：在不可控里维持输出稳定。</p>
-              <p class="note-read"><span class="note-read-time">04 MIN READ</span><span class="note-more">阅读笔记 →</span></p>
-            </li>
-          </ul>
-          <template class="note-article-template" data-note="1">
-            <header class="note-article-head">
-              <p class="note-article-kicker">工作流 · 复盘 / 2026.04</p>
-              <h2>从 0 到 1：一支 AI 广告短片的可控交付</h2>
-              <p class="note-article-lead">VK75 键盘 · 30 秒 AI 广告。从一句无法执行的 brief，到 4 轮迭代、14 个废镜头，再到一套可以复用的交付链路——这是整个过程的自白。</p>
-              <ul class="note-article-stats">
-                <li>项目 · VK75 键盘 / 30s</li>
-                <li>迭代 · 4 轮</li>
-                <li>废镜头 · 14 个</li>
-              </ul>
-            </header>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">01</span>需求 · 一句无法执行的 brief</h3>
-              <p>客户给的需求只有一句话：「要像大厂发布会那样的高级感。」这句话没有任何可执行的约束——高级感是什么？是布光、是节奏、还是产品质感？如果带着这个问题直接开工，第一版大概率会毁在「方向」上。</p>
-              <p>AI 创作的第一个瓶颈从来不是模型，而是定义。我先做了两件事：把「高级感」翻译成可验证的约束——冷调金属、低饱和、克制的运镜；再拆成 6 个镜头的叙事骨架，每个镜头只承担一个信息。brief 从一句话变成了一页纸，这一页纸就是后面所有迭代的锚。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">02</span>拆解 · 把创意变成可验收的清单</h3>
-              <p>分镜确定后，我把每个镜头拆成三层：主体（键盘型号、配列）、环境（桌面材质、景深）、情绪（光的颜色与节奏）。每一层都写进生成参数，并用同一张「基准帧」锁定全片一致性。</p>
-              <p>关键不在提示词写得有多长，而在变量控制得有多严——每个镜头只允许一个维度变化，其余全部沿用基准帧。这样即使生成结果偏离，我也能立刻定位是哪个变量出了问题，而不是把整张图推倒重来。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">03</span>失控 · 生成不是拍摄</h3>
-              <p>第一轮样片暴露出 AI 创作最典型的失控：键盘配列变了 4 次——同一把键盘，第 3 个镜头多了 F 区，第 5 个镜头轴体颜色全偏。观众未必说得出哪里不对，但「假」的感觉会从这些缝隙里漏出来。</p>
-              <p>我没有换工具，而是换了一套验收机制：每一帧过两关——技术关（清晰度、形变、配列）与审美关（是否符合品牌调性），两关不过立即重生成，绝不带病进入后期。生成即验收，是这条链路里最重要的一条纪律。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">04</span>迭代 · 30 秒，4 轮，14 个废镜头</h3>
-              <p>第 1 轮解决「不像 VK75」，第 2 轮解决「光不对」，第 3 轮解决「节奏散」，第 4 轮只做减法——删掉两个炫技镜头，因为它们的华丽程度超过了产品本身。调色在 DaVinci 完成：品牌色是深空灰，于是压住高光、给暗部一点金属蓝，让键盘从画面里「浮」出来。</p>
-              <p>声音是最后加进去的，也是最容易被忽略的一步。键轴声我用了真实录制而不是素材库——声音里的那一丝真实感，会把整支片子的合成感压下去。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">05</span>交付 · 从创意到交付完整走通</h3>
-              <p>最终交付的不只是 30 秒成片，还有 4 版横竖构图和一套归档好的分镜与生成参数。</p>
-              <p class="note-article-quote">项目最大的收获不是片子本身，而是流程被固化成了可复用的模板：需求拆解 → 锚点锁定 → 基准帧 → 分批生成 → 两关验收 → 减法剪辑。</p>
-              <p>这条链路后来被直接复用到盼盼花生牛奶、屏幕内外等项目上，单支短片的交付周期缩短了近一半。</p>
-            </section>
-            <footer class="note-article-tags">
-              <span>#AI 广告</span><span>#工作流</span><span>#可控交付</span>
-            </footer>
-          </template>
-          <template class="note-article-template" data-note="2">
-            <header class="note-article-head">
-              <p class="note-article-kicker">开发 · 工具 / 2026.06</p>
-              <h2>把高频创作流程收进面板：Banana Bridge 的自我驯化</h2>
-              <p class="note-article-lead">做 AI 电商视觉时，我发现自己 70% 的时间不在「创作」，而在「搬运」。Banana Bridge 想解决的，就是这件事。</p>
-              <ul class="note-article-stats">
-                <li>定位 · Photoshop 效率面板</li>
-                <li>预设 · 200+ 面部精修</li>
-                <li>入口 · 3 大高频动作</li>
-              </ul>
-            </header>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">01</span>起源 · 70% 的时间不在创作</h3>
-              <p>做 AI 电商视觉时，我统计过一周的工作时间：修一张脸，要在 Photoshop、生成器、浏览器之间来回切窗口；同一套精修参数，每次都要重新调一遍。真正花在「判断画面好不好」上的时间，不到三成。</p>
-              <p>问题的本质不是手慢，而是流程没有容器。散落在窗口里的操作无法被记忆，也就无法被复用——每一次创作都从零开始，这本身就是最大的浪费。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">02</span>设计 · 把「怎么调」变成「调什么」</h3>
-              <p>Banana Bridge 的第一原则是不堆功能，只封装高频。我把两年积累的修图判断抽象成三个入口：3D 镜头控制，让构图从「凭感觉」变成「可回退的参数」；面部精修预设库，200+ 预设一键应用、可局部撤销；素材合成，场景与音效拖入即用，减少跨软件搬运。</p>
-              <p>每个入口背后只有一个信念：AI 的输出必须可控、可复现、可复盘。参数不是魔法，是经验的结构化——把「怎么调」沉淀成「调什么」，是工具存在的全部意义。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">03</span>迭代 · 让工具自己长出来</h3>
-              <p>第一版只有镜头控制，因为直播拍摄里我吃过太多「构图不可回退」的亏。后来给同行试用，反馈最集中的是「修图重复劳动」，于是加了面部精修库——它不是一个晚上设计出来的，而是跟着真实项目一版一版长出来的。</p>
-              <p>技术实现刻意保持克制：Photoshop 面板 + 本地 AI 服务 + JSON 配置，轻到打开即可用。真正花心思的是信息架构——用户要在 3 秒内知道自己在哪个环节、下一步能做什么。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">04</span>沉淀 · 工具是创作的下半场</h3>
-              <p>AI 把「从 0 到 1」的门槛拉得很低，竞争也随之被推向了「从 1 到 100」的效率。Banana Bridge 教给我的不是怎么写面板，而是一句话：真正的提效，是把判断沉淀成界面，让经验可以复制。</p>
-              <p class="note-article-quote">这个信念后来延续到了 Blender 材质桥接插件——同一个原则：高频的事情，值得被固化。</p>
-            </section>
-            <footer class="note-article-tags">
-              <span>#工具开发</span><span>#效率</span><span>#经验结构化</span>
-            </footer>
-          </template>
-          <template class="note-article-template" data-note="3">
-            <header class="note-article-head">
-              <p class="note-article-kicker">随笔 · 迁移 / 2026.08</p>
-              <h2>130 场直播教会我的「确定性」</h2>
-              <p class="note-article-lead">娱乐直播与 AI 创作看似毫无关联，但它们共享同一种底层能力——在不可控里维持输出的稳定。这是我从直播间带到工作流里的东西。</p>
-              <ul class="note-article-stats">
-                <li>直播保障 · 130+ 场</li>
-                <li>开播检查 · S.O.P.</li>
-                <li>迁移原则 · 3 条</li>
-              </ul>
-            </header>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">01</span>直播没有再来一条</h3>
-              <p>第一次独立盯直播，导播台和观察屏之间隔着七个人的喊话。从那以后我记住了一件事：直播没有「再来一条」——任何差错都直接面对观众，后果不可逆。</p>
-              <p>130 场直播保障下来，我学会的从来不是某台设备怎么接，而是一整套关于「确定性」的肌肉记忆。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">02</span>确定性是设计出来的</h3>
-              <p>直播前 90 分钟，我会固定走一遍清单：信号链路、备用方案、回放校验、开播倒计时。每台设备都有备份，每条链路都有兜底，每个动作都有 S.O.P.——不是因为胆小，而是因为真正的高水平，是让「意外」没有机会发生。</p>
-              <p>这套习惯被我原封不动搬进了 AI 创作：生成参数写版本号，像直播脚本一样归档；每个镜头的基准帧，就是直播里的「主备切换」；交付前过验收清单，就像开播前过设备清单。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">03</span>现场感与生成感，是同一件事</h3>
-              <p>直播时我在导播台喊「切」，创作时我在工作流里定「锚」。表面上一个在控制信号，一个在控制像素，底层是同一件事：把不可控的素材，驯化成可控的输出。</p>
-              <p class="note-article-quote">观众不会看到你的备播方案，就像甲方不会看到你的废镜头。但他们能感觉到稳定——那种「这个人知道自己在做什么」的确定感。</p>
-            </section>
-            <section class="note-article-sec">
-              <h3><span class="note-article-idx">04</span>下限决定长期交付</h3>
-              <p>从娱乐直播到 AIGC，工具全换了，但底层习惯没有变：先定义成功标准，再设计冗余，最后才谈创意。</p>
-              <p>创意负责上限，确定性负责下限。一个能持续交付的人，下限必须足够高。</p>
-            </section>
-            <footer class="note-article-tags">
-              <span>#直播</span><span>#确定性</span><span>#方法论</span>
-            </footer>
-          </template>
-        </template>
 
         <p class="empty-state" id="archive-empty" hidden>作品整理中，敬请期待</p>
       </div>
@@ -396,23 +263,6 @@
     </div>
   </div>
 
-  <div class="note-reader" id="note-modal" role="dialog" aria-modal="true" aria-label="创作手记全文" hidden>
-    <button type="button" class="note-reader-backdrop" data-note-close aria-label="关闭手记"></button>
-    <div class="note-reader-panel">
-      <header class="note-reader-bar">
-        <span class="note-reader-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span class="note-reader-title" id="note-reader-title">NOTES · ARCHIVE</span>
-        <span class="note-reader-status" aria-hidden="true"><i></i>READ</span>
-      </header>
-      <div class="note-reader-scroll">
-        <article class="note-article" id="note-article"></article>
-      </div>
-      <footer class="note-reader-foot">
-        <span class="note-reader-foot-log" id="note-reader-foot-log">&gt; 手记归档 · 持续更新</span>
-        <button type="button" class="note-reader-close" id="note-reader-close" data-note-close>关闭</button>
-      </footer>
-    </div>
-  </div>
 
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片预览" hidden>
     <div class="lightbox-backdrop" data-lightbox-close></div>

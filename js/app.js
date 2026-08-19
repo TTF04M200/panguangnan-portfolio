@@ -21,7 +21,6 @@
     folderLastFocused: null,
     folderPlayers: [],
     folderKey: null,
-    noteLastFocused: null,
   };
 
   /* ---------------- 工具 ---------------- */
@@ -183,6 +182,7 @@
       plugins: sanitizeList(raw.plugins, "plugin"),
       skills: sanitizeList(raw.skills, "skill"),
       images: sanitizeList(raw.images, "image"),
+      ecommerce: sanitizeList(raw.ecommerce, "ecommerce"),
       videos: sanitizeList(raw.videos, "video"),
       groups: raw.groups && typeof raw.groups === "object" ? raw.groups : {},
     };
@@ -474,69 +474,6 @@
     });
   }
 
-  /* ---------------- 手记：阅读弹窗 ---------------- */
-  function openNoteModal(card) {
-    const modal = $("#note-modal");
-    if (!modal) return;
-    const idx = card ? card.dataset.note : "";
-    if (!idx) return;
-    const content = $("#folder-overlay-content");
-    const tpl = content ? content.querySelector('.note-article-template[data-note="' + idx + '"]') : null;
-    if (!tpl) return;
-    const title = card.querySelector(".note-title");
-    const meta = card.querySelector(".note-meta");
-    $("#note-reader-title").textContent = "NOTES · " + (title ? title.textContent.trim() : "ARCHIVE");
-    const article = $("#note-article");
-    article.replaceChildren();
-    article.appendChild(tpl.content.cloneNode(true));
-    const footLog = $("#note-reader-foot-log");
-    if (footLog) footLog.textContent = "> " + (meta ? meta.textContent.trim() : "创作手记") + " · 已归档 · 持续更新";
-    state.noteLastFocused = document.activeElement;
-    modal.hidden = false;
-    document.body.style.overflow = "hidden";
-    document.addEventListener("keydown", onNoteKey);
-    const closeBtn = $("#note-reader-close");
-    if (closeBtn) closeBtn.focus();
-  }
-
-  function closeNoteModal(silent) {
-    const modal = $("#note-modal");
-    if (!modal || modal.hidden) return;
-    modal.hidden = true;
-    document.body.style.overflow = ($("#folder-overlay") && !$("#folder-overlay").hidden && $("#note-modal").hidden) ? "hidden" : "";
-    document.removeEventListener("keydown", onNoteKey);
-    if (!silent) {
-      const target = state.noteLastFocused || state.folderLastFocused || state.lastFocused;
-      if (target && target.focus) target.focus();
-    }
-  }
-
-  function onNoteKey(e) {
-    if (e.key === "Escape") closeNoteModal();
-  }
-
-  function bindNoteReader() {
-    const content = $("#folder-overlay-content");
-    if (!content) return;
-    content.addEventListener("click", (e) => {
-      const card = e.target.closest(".note-card");
-      if (card) openNoteModal(card);
-    });
-    content.addEventListener("keydown", (e) => {
-      if (e.key !== "Enter" && e.key !== " ") return;
-      const card = e.target.closest(".note-card");
-      if (card) {
-        e.preventDefault();
-        openNoteModal(card);
-      }
-    });
-    const modal = $("#note-modal");
-    if (modal) {
-      modal.addEventListener("click", (e) => {
-        if (e.target.closest("[data-note-close]")) closeNoteModal();
-      });
-    }
-  }
   /* ---------------- 渲染：生图画廊 + 灯箱 ---------------- */
   function renderGallery(list, gridSel, emptySel, groupMode) {
     const grid = resolveEl(gridSel);
@@ -782,41 +719,37 @@
       tag: (c) => (c.plugins.length + (c.skills ? c.skills.length : 0)) + " 个创作工具",
       empty: (c) => !c.plugins.length && !(c.skills && c.skills.length),
     },
-    notes: {
-      srcs: () => [],
-      count: () => 3,
-      unit: "篇",
-      tag: () => "3 篇创作随笔",
-      empty: () => false,
+    ecommerce: {
+      srcs: (c) => (c.ecommerce || []).slice(0, 3).map((i) => i.file).filter(Boolean),
+      count: (c) => (c.ecommerce || []).length,
+      unit: "张",
+      tag: (c) => (c.ecommerce || []).length + " 张电商视觉",
+      empty: (c) => !(c.ecommerce && c.ecommerce.length),
     },
   };
 
-  function fillFolderCover(cover, srcs, count, unit, isNotes) {
+  function fillFolderCover(cover, srcs, count, unit) {
     cover.replaceChildren();
-    if (isNotes) {
-      for (let i = 0; i < 3; i++) cover.appendChild(el("span", "folder-paper"));
-    } else {
-      srcs.forEach((src) => {
-        const img = el("img", "folder-thumb");
-        const thumb = src.replace(/^assets\/(images|videos)\//, "assets/thumbs/");
-        img.src = thumb;
-        img.alt = "";
-        img.loading = "eager";
-        img.fetchPriority = "low";
-        img.decoding = "async";
-        let fellBack = false;
-        img.addEventListener("error", () => {
-          if (!fellBack && thumb !== src) {
-            fellBack = true;
-            img.src = src;
-          } else {
-            img.remove();
-          }
-        });
-        cover.appendChild(img);
+    srcs.forEach((src) => {
+      const img = el("img", "folder-thumb");
+      const thumb = src.replace(/^assets\/(images|videos|ecommerce)\//, "assets/thumbs/");
+      img.src = thumb;
+      img.alt = "";
+      img.loading = "eager";
+      img.fetchPriority = "low";
+      img.decoding = "async";
+      let fellBack = false;
+      img.addEventListener("error", () => {
+        if (!fellBack && thumb !== src) {
+          fellBack = true;
+          img.src = src;
+        } else {
+          img.remove();
+        }
       });
-      while (cover.children.length < 3) cover.appendChild(el("span", "folder-tile"));
-    }
+      cover.appendChild(img);
+    });
+    while (cover.children.length < 3) cover.appendChild(el("span", "folder-tile"));
     const tile = el("span", "folder-tile folder-tile--count");
     tile.appendChild(el("b", null, String(count)));
     tile.appendChild(el("span", null, unit));
@@ -834,7 +767,7 @@
       const tag = $(".folder-tag", card);
       if (tag) tag.textContent = def.tag(config);
       const cover = $(".folder-cover", card);
-      if (cover) fillFolderCover(cover, def.srcs(config), def.count(config), def.unit, card.dataset.folder === "notes");
+      if (cover) fillFolderCover(cover, def.srcs(config), def.count(config), def.unit);
       const head = $(".folder-head", card);
       if (head) {
         head.addEventListener("click", () => openFolderOverlay(card, config));
@@ -896,9 +829,13 @@
         renderToolkit([], config.skills, grid, null);
         content.appendChild(sec);
       }
-    } else if (key === "notes") {
-      const tpl = $("#notes-template");
-      if (tpl) content.appendChild(tpl.content.cloneNode(true));
+    } else if (key === "ecommerce") {
+      const grid = el("div", "gallery");
+      const empty = el("p", "empty-state", "电商作品整理中，敬请期待");
+      empty.hidden = true;
+      content.appendChild(grid);
+      content.appendChild(empty);
+      renderGallery(config.ecommerce || [], grid, empty, config.groups);
     }
   }
 
@@ -936,7 +873,7 @@
   }
 
   function onFolderKey(e) {
-    if (e.key === "Escape" && $("#lightbox").hidden && $("#runtime-modal").hidden && $("#note-modal").hidden) closeFolderOverlay();
+    if (e.key === "Escape" && $("#lightbox").hidden && $("#runtime-modal").hidden) closeFolderOverlay();
   }
 
   function bindFolderOverlay() {
@@ -1151,7 +1088,6 @@
     bindLightbox();
     bindFolderOverlay();
     bindRuntimeModal();
-    bindNoteReader();
     initNav();
     initProgress();
     initReveal();
