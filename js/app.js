@@ -183,6 +183,8 @@
       skills: sanitizeList(raw.skills, "skill"),
       images: sanitizeList(raw.images, "image"),
       ecommerce: sanitizeList(raw.ecommerce, "ecommerce"),
+      photos: sanitizeList(raw.photos, "photo"),
+      drama: sanitizeList(raw.drama, "drama"),
       videos: sanitizeList(raw.videos, "video"),
       groups: raw.groups && typeof raw.groups === "object" ? raw.groups : {},
     };
@@ -227,8 +229,8 @@
   function renderTicker(skills) {
     const track = $("#ticker-track");
     if (!track) return;
-    const base = skills.length ? skills : ["AI 视频", "AI 生图", "AI 工具"];
-    const curated = ["AI 视频", "AI 生图", "AI 工具", "品牌视觉", "直播保障", "SEEDANCE", "提示词工程", "AI 剧作", "MIDJOURNEY", "COMFYUI", "CODE X", "VOICE × VISION"];
+    const base = skills.length ? skills : ["AI 视频", "电商产品主图", "AI 工具"];
+    const curated = ["AI 视频", "电商产品主图", "AI 工具", "品牌视觉", "直播保障", "SEEDANCE", "提示词工程", "AI 剧作", "MIDJOURNEY", "COMFYUI", "CODE X", "VOICE × VISION"];
     const items = curated;
     const sep = '<span class="ticker-sep" aria-hidden="true">✦</span>';
     let html = "";
@@ -712,6 +714,20 @@
       tag: (c) => c.images.length + " 张商业视觉",
       empty: (c) => !c.images.length,
     },
+    photos: {
+      srcs: (c) => (c.photos || []).slice(0, 3).map((i) => i.file).filter(Boolean),
+      count: (c) => (c.photos || []).length,
+      unit: "张",
+      tag: (c) => (c.photos || []).length + " 张摄影作品",
+      empty: (c) => !(c.photos && c.photos.length),
+    },
+    drama: {
+      srcs: (c) => (c.drama || []).slice(0, 3).map((i) => i.file).filter(Boolean),
+      count: (c) => (c.drama || []).length,
+      unit: "张",
+      tag: (c) => (c.drama || []).length + " 张分镜",
+      empty: (c) => !(c.drama && c.drama.length),
+    },
     plugins: {
       srcs: (c) => c.plugins.concat(c.skills || []).slice(0, 3).map((p) => p.cover).filter(Boolean),
       count: (c) => c.plugins.length + (c.skills ? c.skills.length : 0),
@@ -732,7 +748,7 @@
     cover.replaceChildren();
     srcs.forEach((src) => {
       const img = el("img", "folder-thumb");
-      const thumb = src.replace(/^assets\/(images|videos|ecommerce)\//, "assets/thumbs/");
+      const thumb = src.replace(/^assets\/(images|videos|ecommerce|photos2|drama)\//, "assets/thumbs/");
       img.src = thumb;
       img.alt = "";
       img.loading = "eager";
@@ -804,6 +820,20 @@
       content.appendChild(grid);
       content.appendChild(empty);
       renderGallery(config.images, grid, empty, config.groups);
+    } else if (key === "photos") {
+      const grid = el("div", "gallery");
+      const empty = el("p", "empty-state", "摄影作品整理中，敬请期待");
+      empty.hidden = true;
+      content.appendChild(grid);
+      content.appendChild(empty);
+      renderGallery(config.photos || [], grid, empty, config.groups);
+    } else if (key === "drama") {
+      const grid = el("div", "gallery");
+      const empty = el("p", "empty-state", "短剧作品整理中，敬请期待");
+      empty.hidden = true;
+      content.appendChild(grid);
+      content.appendChild(empty);
+      renderGallery(config.drama || [], grid, empty, config.groups);
     } else if (key === "plugins") {
       const total = config.plugins.length + (config.skills ? config.skills.length : 0);
       if (!total) {
@@ -989,13 +1019,12 @@
       }
     });
 
-    const sections = ["about", "archive", "expertise", "contact"]
+    const sections = ["about", "archive", "contact"]
       .map((id) => document.getElementById(id))
       .filter(Boolean);
     const linkMap = {
       about: 'a[href="#about"]',
       archive: 'a[href="#archive"]',
-      expertise: 'a[href="#expertise"]',
       contact: 'a[href="#contact"]',
     };
     const io = new IntersectionObserver(

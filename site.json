@@ -35,7 +35,11 @@
     "人像写真": "portrait",
     "场景与建筑": "landscape",
     "电商 · 主视觉": "portrait",
-    "电商 · 详情页": "portrait"
+    "电商 · 详情页": "portrait",
+    "横构图": "landscape",
+    "竖构图": "portrait",
+    "《承欢》": "portrait",
+    "真千金重生后全家团宠了": "portrait"
   },
   "plugins": [
     {
@@ -434,6 +438,250 @@
       "tags": [
         "敷尔佳",
         "详情页"
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "id": "photo-01",
+      "group": "横构图",
+      "title": "摄影作品 01",
+      "file": "assets/photos2/photo-grid-01.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-02",
+      "group": "横构图",
+      "title": "摄影作品 02",
+      "file": "assets/photos2/photo-grid-02.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-03",
+      "group": "横构图",
+      "title": "摄影作品 03",
+      "file": "assets/photos2/photo-grid-03.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-04",
+      "group": "横构图",
+      "title": "摄影作品 04",
+      "file": "assets/photos2/photo-grid-04.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-05",
+      "group": "横构图",
+      "title": "摄影作品 05",
+      "file": "assets/photos2/photo-grid-05.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-06",
+      "group": "横构图",
+      "title": "摄影作品 06",
+      "file": "assets/photos2/photo-grid-06.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-07",
+      "group": "横构图",
+      "title": "摄影作品 07",
+      "file": "assets/photos2/photo-grid-07.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-08",
+      "group": "横构图",
+      "title": "摄影作品 08",
+      "file": "assets/photos2/photo-grid-08.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-09",
+      "group": "横构图",
+      "title": "摄影作品 09",
+      "file": "assets/photos2/photo-grid-09.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-10",
+      "group": "横构图",
+      "title": "摄影作品 10",
+      "file": "assets/photos2/photo-grid-10.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-11",
+      "group": "横构图",
+      "title": "摄影作品 11",
+      "file": "assets/photos2/photo-grid-11.jpg",
+      "tags": [
+        "摄影",
+        "横构图"
+      ]
+    },
+    {
+      "id": "photo-tall-01",
+      "group": "竖构图",
+      "title": "摄影作品 12",
+      "file": "assets/photos2/photo-tall-01.jpg",
+      "tags": [
+        "摄影",
+        "竖构图"
+      ]
+    },
+    {
+      "id": "photo-tall-02",
+      "group": "竖构图",
+      "title": "摄影作品 13",
+      "file": "assets/photos2/photo-tall-02.jpg",
+      "tags": [
+        "摄影",
+        "竖构图"
+      ]
+    },
+    {
+      "id": "photo-tall-03",
+      "group": "竖构图",
+      "title": "摄影作品 14",
+      "file": "assets/photos2/photo-tall-03.jpg",
+      "tags": [
+        "摄影",
+        "竖构图"
+      ]
+    }
+  ],
+  "drama": [
+    {
+      "id": "drama-chenghuan-01",
+      "group": "《承欢》",
+      "title": "《承欢》分镜 01",
+      "file": "assets/drama/drama-chenghuan-01.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-chenghuan-02",
+      "group": "《承欢》",
+      "title": "《承欢》分镜 02",
+      "file": "assets/drama/drama-chenghuan-02.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-chenghuan-03",
+      "group": "《承欢》",
+      "title": "《承欢》分镜 03",
+      "file": "assets/drama/drama-chenghuan-03.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-chenghuan-04",
+      "group": "《承欢》",
+      "title": "《承欢》分镜 04",
+      "file": "assets/drama/drama-chenghuan-04.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-chenghuan-05",
+      "group": "《承欢》",
+      "title": "《承欢》分镜 05",
+      "file": "assets/drama/drama-chenghuan-05.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-qianjin-01",
+      "group": "真千金重生后全家团宠了",
+      "title": "真千金重生后全家团宠了 · 分镜 01",
+      "file": "assets/drama/drama-qianjin-01.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-qianjin-02",
+      "group": "真千金重生后全家团宠了",
+      "title": "真千金重生后全家团宠了 · 分镜 02",
+      "file": "assets/drama/drama-qianjin-02.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-qianjin-03",
+      "group": "真千金重生后全家团宠了",
+      "title": "真千金重生后全家团宠了 · 分镜 03",
+      "file": "assets/drama/drama-qianjin-03.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-qianjin-04",
+      "group": "真千金重生后全家团宠了",
+      "title": "真千金重生后全家团宠了 · 分镜 04",
+      "file": "assets/drama/drama-qianjin-04.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
+      ]
+    },
+    {
+      "id": "drama-qianjin-05",
+      "group": "真千金重生后全家团宠了",
+      "title": "真千金重生后全家团宠了 · 分镜 05",
+      "file": "assets/drama/drama-qianjin-05.jpg",
+      "tags": [
+        "短剧",
+        "分镜"
       ]
     }
   ]
