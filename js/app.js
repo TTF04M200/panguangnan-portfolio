@@ -518,11 +518,21 @@
         image.height = 900;
         if (img.ratio) image.style.aspectRatio = img.ratio;
         image.addEventListener("error", () => {
-          const fb = el("div", "media-fallback", DEFAULTS.imageFallback);
-          fb.style.aspectRatio = "4 / 3";
-          item.replaceChildren(fb);
+          if (curSrc !== img.file && img.file) {
+            curSrc = img.file;
+            image.src = img.file;
+          } else {
+            const fb = el("div", "media-fallback", DEFAULTS.imageFallback);
+            fb.style.aspectRatio = "4 / 3";
+            item.replaceChildren(fb);
+          }
         });
-        if (img.file) image.src = img.file;
+        let curSrc = img.file;
+        if (img.file) {
+          const thumb = img.file.replace(/^assets\/(images|videos|ecommerce|photos2|drama)\//, "assets/thumbs/");
+          if (thumb !== img.file) curSrc = thumb;
+          image.src = curSrc;
+        }
         item.appendChild(image);
 
         const caption = el("div", "gallery-caption");
