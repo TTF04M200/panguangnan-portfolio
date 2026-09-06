@@ -265,6 +265,21 @@
       "file": "assets/videos/pixel-1up.mp4",
       "cover": "assets/videos/pixel-1up-cover.jpg",
       "description": "13 秒 AI 概念短片：客厅里悬浮的 ROOM.EXE 弹窗与 1UP 像素特效，让现实空间被复古游戏元素包围。"
+    },
+    {
+      "id": "video-07",
+      "title": "英为拓 · 产品测试片",
+      "file": "assets/videos/yingweituo-product-test.mp4",
+      "cover": "assets/videos/yingweituo-product-test-cover.jpg",
+      "description": "15 秒竖屏产品测试片：围绕产品外观与使用细节做多角度实拍展示。",
+      "tall": true
+    },
+    {
+      "id": "video-08",
+      "title": "红米 K90 · 产品视觉片",
+      "file": "assets/videos/redmi-k90.mp4",
+      "cover": "assets/videos/redmi-k90-cover.jpg",
+      "description": "约 25 秒的手机产品视频：以暗调画面呈现 Redmi K90 的外观设计与屏幕质感。"
     }
   ],
   "skills": [
