@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "潘光楠",
-    "title": "播音与主持艺术专业应届毕业生",
+    "title": "AIGC 设计师 · AI 影像创作者",
     "bio": "播音与主持艺术专业应届毕业生，主修摄影摄像与 AIGC 内容创作。有直播、摄影、短剧等一线内容生产经验，累计保障 130+ 场直播稳定进行；能独立完成产品渲染、AI 生图与视频创作，擅长用 Seedance / Midjourney 提示词工程控制生成质量，并用经典剧作方法为 AI 短片搭好叙事结构；习惯把现场经验沉淀成可复用的流程与工具。希望在内容产品与 AIGC 影像工具方向持续深耕。",
     "skills": [
       "摄影摄像",
@@ -9,6 +9,9 @@
       "Codex",
       "Midjourney",
       "ComfyUI",
+      "Nano Banana",
+      "Blender",
+      "可灵 / 即梦",
       "DaVinci 调色",
       "Photoshop",
       "Lightroom",

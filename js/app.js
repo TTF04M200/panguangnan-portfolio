@@ -91,7 +91,7 @@
     const out = [];
     for (const s of raw) {
       const v = cleanStr(s, 20);
-      if (v && !out.includes(v) && out.length < 13) out.push(v);
+      if (v && !out.includes(v) && out.length < 24) out.push(v);
     }
     return out;
   }
