@@ -1,5 +1,5 @@
 /* ============================================================
- * 潘光楠 · VOICE × VISION · 页面逻辑
+ * 潘光楠 · AIGC × VISUAL · 页面逻辑
  * 全部作品内容来自 site.json，本文件不包含任何硬编码作品。
  * 依赖：无。原生 JS，零构建。
  * ============================================================ */
@@ -230,7 +230,7 @@
     const track = $("#ticker-track");
     if (!track) return;
     const base = skills.length ? skills : ["AI 视频", "电商产品主图", "AI 工具"];
-    const curated = ["AI 视频", "电商产品主图", "AI 工具", "品牌视觉", "直播保障", "SEEDANCE", "提示词工程", "AI 剧作", "MIDJOURNEY", "COMFYUI", "CODE X", "VOICE × VISION"];
+    const curated = ["AI 视频", "电商产品主图", "AI 工具", "品牌视觉", "直播保障", "SEEDANCE", "提示词工程", "AI 剧作", "MIDJOURNEY", "COMFYUI", "CODE X", "AIGC × VISUAL"];
     const items = curated;
     const sep = '<span class="ticker-sep" aria-hidden="true">✦</span>';
     let html = "";
@@ -999,7 +999,7 @@
       $("#contact .container").hidden = true;
     }
     const year = new Date().getFullYear();
-    $("#footer-note").textContent = "© " + year + " " + configName + " · VOICE × VISION";
+    $("#footer-note").textContent = "© " + year + " " + configName + " · AIGC × VISUAL";
     $("#nav-name").textContent = profile.name;
   }
 
