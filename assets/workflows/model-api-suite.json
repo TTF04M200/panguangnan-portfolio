@@ -1,0 +1,2142 @@
+{
+  "id": "1f971532-6387-4840-acf8-4dea6d13944c",
+  "revision": 0,
+  "last_node_id": 99,
+  "last_link_id": 299,
+  "nodes": [
+    {
+      "id": 16,
+      "type": "🔹SendTo Photoshop Plugin",
+      "pos": [
+        2519.437255859375,
+        -119.02080535888672
+      ],
+      "size": [
+        226.3228515625,
+        26
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "output",
+          "localized_name": "output",
+          "name": "output",
+          "type": "IMAGE",
+          "link": 299
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "🔹SendTo Photoshop Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 18,
+      "type": "🔹SendTo Photoshop Plugin",
+      "pos": [
+        2498.0009765625,
+        -1147.12109375
+      ],
+      "size": [
+        226.3228515625,
+        26
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "output",
+          "localized_name": "output",
+          "name": "output",
+          "type": "IMAGE",
+          "link": 226
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "🔹SendTo Photoshop Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 65,
+      "type": "ImpactSwitch",
+      "pos": [
+        1954.91748046875,
+        -323.3434753417969
+      ],
+      "size": [
+        210,
+        122
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 0,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "input1",
+          "localized_name": "input1",
+          "name": "input1",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "label": "select",
+          "localized_name": "select",
+          "name": "select",
+          "type": "INT",
+          "widget": {
+            "name": "select"
+          },
+          "link": null
+        },
+        {
+          "label": "sel_mode",
+          "localized_name": "sel_mode",
+          "name": "sel_mode",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "sel_mode"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "selected_value",
+          "localized_name": "selected_value",
+          "name": "selected_value",
+          "type": "*",
+          "links": [
+            284
+          ]
+        },
+        {
+          "label": "selected_label",
+          "localized_name": "selected_label",
+          "name": "selected_label",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "label": "selected_index",
+          "localized_name": "selected_index",
+          "name": "selected_index",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactSwitch",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "select": true,
+            "sel_mode": true
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        1,
+        false
+      ]
+    },
+    {
+      "id": 32,
+      "type": "🔹Photoshop ComfyUI Plugin",
+      "pos": [
+        1922.3470458984375,
+        445.2064208984375
+      ],
+      "size": [
+        234.108984375,
+        222
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "Canvas",
+          "localized_name": "Canvas",
+          "name": "Canvas",
+          "type": "IMAGE",
+          "links": [
+            223,
+            266,
+            277,
+            281,
+            291,
+            296
+          ]
+        },
+        {
+          "label": "Mask",
+          "localized_name": "Mask",
+          "name": "Mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "label": "Slider",
+          "localized_name": "Slider",
+          "name": "Slider",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "label": "Seed",
+          "localized_name": "Seed",
+          "name": "Seed",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "+",
+          "localized_name": "+",
+          "name": "+",
+          "type": "STRING",
+          "links": [
+            187
+          ]
+        },
+        {
+          "label": "-",
+          "localized_name": "-",
+          "name": "-",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "W",
+          "localized_name": "W",
+          "name": "W",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "H",
+          "localized_name": "H",
+          "name": "H",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Disable Preview": false,
+        "Dont Hide Buttons": false,
+        "Node name for S&R": "🔹Photoshop ComfyUI Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 40,
+      "type": "🔹Photoshop ComfyUI Plugin",
+      "pos": [
+        2943.80908203125,
+        445.2638854980469
+      ],
+      "size": [
+        234.108984375,
+        222
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "Canvas",
+          "localized_name": "Canvas",
+          "name": "Canvas",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "label": "Mask",
+          "localized_name": "Mask",
+          "name": "Mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "label": "Slider",
+          "localized_name": "Slider",
+          "name": "Slider",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "label": "Seed",
+          "localized_name": "Seed",
+          "name": "Seed",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "+",
+          "localized_name": "+",
+          "name": "+",
+          "type": "STRING",
+          "links": [
+            189
+          ]
+        },
+        {
+          "label": "-",
+          "localized_name": "-",
+          "name": "-",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "W",
+          "localized_name": "W",
+          "name": "W",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "H",
+          "localized_name": "H",
+          "name": "H",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Disable Preview": false,
+        "Dont Hide Buttons": false,
+        "Node name for S&R": "🔹Photoshop ComfyUI Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 22,
+      "type": "Fast Groups Muter (rgthree)",
+      "pos": [
+        1270.5341796875,
+        288.6123962402344
+      ],
+      "size": [
+        404,
+        322
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "OPT_CONNECTION",
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "matchColors": "green",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "always one",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "color": "#4e5e4e",
+      "bgcolor": "#4e5e4e"
+    },
+    {
+      "id": 57,
+      "type": "🔹SendTo Photoshop Plugin",
+      "pos": [
+        3553.100168952375,
+        -1142.9280552995533
+      ],
+      "size": [
+        226.3228515625,
+        26
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "output",
+          "localized_name": "output",
+          "name": "output",
+          "type": "IMAGE",
+          "link": 280
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "🔹SendTo Photoshop Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 13,
+      "type": "🔹SendTo Photoshop Plugin",
+      "pos": [
+        2478.6610602528904,
+        -536.165103622783
+      ],
+      "size": [
+        226.3228515625,
+        26
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "output",
+          "localized_name": "output",
+          "name": "output",
+          "type": "IMAGE",
+          "link": 285
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "🔹SendTo Photoshop Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 54,
+      "type": "🔹SendTo Photoshop Plugin",
+      "pos": [
+        3597.554863941708,
+        -504.21450096622664
+      ],
+      "size": [
+        226.3228515625,
+        26
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "output",
+          "localized_name": "output",
+          "name": "output",
+          "type": "IMAGE",
+          "link": 295
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "🔹SendTo Photoshop Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 63,
+      "type": "ImpactSwitch",
+      "pos": [
+        2958.4595350980235,
+        -314.81718376226695
+      ],
+      "size": [
+        210,
+        122
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "input1",
+          "localized_name": "input1",
+          "name": "input1",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "label": "select",
+          "localized_name": "select",
+          "name": "select",
+          "type": "INT",
+          "widget": {
+            "name": "select"
+          },
+          "link": null
+        },
+        {
+          "label": "sel_mode",
+          "localized_name": "sel_mode",
+          "name": "sel_mode",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "sel_mode"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "selected_value",
+          "localized_name": "selected_value",
+          "name": "selected_value",
+          "type": "*",
+          "links": null
+        },
+        {
+          "label": "selected_label",
+          "localized_name": "selected_label",
+          "name": "selected_label",
+          "type": "STRING",
+          "links": [
+            294
+          ]
+        },
+        {
+          "label": "selected_index",
+          "localized_name": "selected_index",
+          "name": "selected_index",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactSwitch",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "select": true,
+            "sel_mode": true
+          },
+          "version": "7.0.1",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1,
+        false
+      ]
+    },
+    {
+      "id": 21,
+      "type": "Comfly_Haoee_api_key",
+      "pos": [
+        1255.069091796875,
+        -280.6014404296875
+      ],
+      "size": [
+        405.3270263671875,
+        78.36758422851562
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "apikey",
+          "localized_name": "apikey",
+          "name": "apikey",
+          "type": "STRING",
+          "widget": {
+            "name": "apikey"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "apikey",
+          "localized_name": "apikey",
+          "name": "apikey",
+          "type": "STRING",
+          "links": [
+            225,
+            268,
+            279,
+            283,
+            293,
+            298
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Comfly_Haoee_api_key",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 69,
+      "type": "Any Switch (rgthree)",
+      "pos": [
+        2231.763427734375,
+        902.22216796875
+      ],
+      "size": [
+        210,
+        106
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "label": "any_01",
+          "name": "any_01",
+          "type": "STRING",
+          "link": 187
+        },
+        {
+          "dir": 3,
+          "label": "any_02",
+          "name": "any_02",
+          "type": "STRING",
+          "link": 189
+        },
+        {
+          "dir": 3,
+          "label": "any_03",
+          "name": "any_03",
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "dir": 3,
+          "label": "any_04",
+          "name": "any_04",
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "dir": 3,
+          "name": "any_05",
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 4,
+          "label": "STRING",
+          "name": "*",
+          "shape": 3,
+          "type": "STRING",
+          "links": [
+            224,
+            267,
+            278,
+            282,
+            292,
+            297
+          ]
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 76,
+      "type": "🔹SendTo Photoshop Plugin",
+      "pos": [
+        3618.881103515625,
+        -87.29102325439453
+      ],
+      "size": [
+        226.3228515625,
+        26
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "output",
+          "localized_name": "output",
+          "name": "output",
+          "type": "IMAGE",
+          "link": 271
+        }
+      ],
+      "outputs": [
+        {
+          "label": "images",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "🔹SendTo Photoshop Plugin",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 91,
+      "type": "Comfly_HaoeeImage_Gpt_Image2_PerCount",
+      "pos": [
+        3004.909825820402,
+        -136.9910789027851
+      ],
+      "size": [
+        400,
+        292
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "image1",
+          "localized_name": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 266
+        },
+        {
+          "label": "image2",
+          "localized_name": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image3",
+          "localized_name": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image4",
+          "localized_name": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "prompt",
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 267
+        },
+        {
+          "label": "model",
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "size",
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "label": "api_key",
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": 268
+        },
+        {
+          "label": "response_format",
+          "localized_name": "response_format",
+          "name": "response_format",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "response_format"
+          },
+          "link": null
+        },
+        {
+          "label": "seed",
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "generated_image",
+          "localized_name": "generated_image",
+          "name": "generated_image",
+          "type": "IMAGE",
+          "links": [
+            271
+          ]
+        },
+        {
+          "label": "response",
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Comfly_HaoeeImage_Gpt_Image2_PerCount",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "gpt-image-2",
+        "auto",
+        "",
+        "b64_json",
+        0,
+        "randomize"
+      ]
+    },
+    {
+      "id": 77,
+      "type": "Comfly_HaoeeImage_Gemini",
+      "pos": [
+        1921.6778505910863,
+        -1190.8906270142122
+      ],
+      "size": [
+        400,
+        412
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "image1",
+          "localized_name": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 223
+        },
+        {
+          "label": "image2",
+          "localized_name": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image3",
+          "localized_name": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image4",
+          "localized_name": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image5",
+          "localized_name": "image5",
+          "name": "image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image6",
+          "localized_name": "image6",
+          "name": "image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image7",
+          "localized_name": "image7",
+          "name": "image7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image8",
+          "localized_name": "image8",
+          "name": "image8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image9",
+          "localized_name": "image9",
+          "name": "image9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image10",
+          "localized_name": "image10",
+          "name": "image10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "prompt",
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 224
+        },
+        {
+          "label": "model",
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "aspectRatio",
+          "localized_name": "aspectRatio",
+          "name": "aspectRatio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspectRatio"
+          },
+          "link": null
+        },
+        {
+          "label": "imageSize",
+          "localized_name": "imageSize",
+          "name": "imageSize",
+          "type": "COMBO",
+          "widget": {
+            "name": "imageSize"
+          },
+          "link": null
+        },
+        {
+          "label": "apikey",
+          "localized_name": "apikey",
+          "name": "apikey",
+          "type": "STRING",
+          "widget": {
+            "name": "apikey"
+          },
+          "link": 225
+        },
+        {
+          "label": "seed",
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            226
+          ]
+        },
+        {
+          "label": "response",
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "image_url",
+          "localized_name": "image_url",
+          "name": "image_url",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Comfly_HaoeeImage_Gemini",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "gemini-3-pro-image-preview",
+        "auto",
+        "2K",
+        "",
+        1864111689,
+        "randomize"
+      ]
+    },
+    {
+      "id": 95,
+      "type": "Comfly_HaoeeImage_Gemini",
+      "pos": [
+        3069.8125083766463,
+        -1171.3492167935387
+      ],
+      "size": [
+        400,
+        412
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image1",
+          "localized_name": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 277
+        },
+        {
+          "label": "image2",
+          "localized_name": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image3",
+          "localized_name": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image4",
+          "localized_name": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image5",
+          "localized_name": "image5",
+          "name": "image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image6",
+          "localized_name": "image6",
+          "name": "image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image7",
+          "localized_name": "image7",
+          "name": "image7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image8",
+          "localized_name": "image8",
+          "name": "image8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image9",
+          "localized_name": "image9",
+          "name": "image9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image10",
+          "localized_name": "image10",
+          "name": "image10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "prompt",
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 278
+        },
+        {
+          "label": "model",
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "aspectRatio",
+          "localized_name": "aspectRatio",
+          "name": "aspectRatio",
+          "type": "COMBO",
+          "widget": {
+            "name": "aspectRatio"
+          },
+          "link": null
+        },
+        {
+          "label": "imageSize",
+          "localized_name": "imageSize",
+          "name": "imageSize",
+          "type": "COMBO",
+          "widget": {
+            "name": "imageSize"
+          },
+          "link": null
+        },
+        {
+          "label": "apikey",
+          "localized_name": "apikey",
+          "name": "apikey",
+          "type": "STRING",
+          "widget": {
+            "name": "apikey"
+          },
+          "link": 279
+        },
+        {
+          "label": "seed",
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            280
+          ]
+        },
+        {
+          "label": "response",
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "image_url",
+          "localized_name": "image_url",
+          "name": "image_url",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Comfly_HaoeeImage_Gemini",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "gemini-3.1-flash-image-preview-lite",
+        "auto",
+        "2K",
+        "",
+        0,
+        "randomize"
+      ]
+    },
+    {
+      "id": 96,
+      "type": "Comfly_HaoeeImage_Midjourney",
+      "pos": [
+        1946.2405436747886,
+        -572.3530816959533
+      ],
+      "size": [
+        400,
+        268
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "image1",
+          "localized_name": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 281
+        },
+        {
+          "label": "image2",
+          "localized_name": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image3",
+          "localized_name": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image4",
+          "localized_name": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "prompt",
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 282
+        },
+        {
+          "label": "botType",
+          "localized_name": "botType",
+          "name": "botType",
+          "type": "COMBO",
+          "widget": {
+            "name": "botType"
+          },
+          "link": null
+        },
+        {
+          "label": "apikey",
+          "localized_name": "apikey",
+          "name": "apikey",
+          "type": "STRING",
+          "widget": {
+            "name": "apikey"
+          },
+          "link": 283
+        },
+        {
+          "label": "state",
+          "localized_name": "state",
+          "name": "state",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "state"
+          },
+          "link": 284
+        },
+        {
+          "label": "seed",
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            285
+          ]
+        },
+        {
+          "label": "response",
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "image_url",
+          "localized_name": "image_url",
+          "name": "image_url",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Comfly_HaoeeImage_Midjourney",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "MID_JOURNEY",
+        "",
+        "",
+        0,
+        "randomize"
+      ]
+    },
+    {
+      "id": 98,
+      "type": "Comfly_HaoeeImage_Midjourney",
+      "pos": [
+        3149.911848525361,
+        -549.7813871136128
+      ],
+      "size": [
+        400,
+        268
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "image1",
+          "localized_name": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 291
+        },
+        {
+          "label": "image2",
+          "localized_name": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image3",
+          "localized_name": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image4",
+          "localized_name": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "prompt",
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 292
+        },
+        {
+          "label": "botType",
+          "localized_name": "botType",
+          "name": "botType",
+          "type": "COMBO",
+          "widget": {
+            "name": "botType"
+          },
+          "link": null
+        },
+        {
+          "label": "apikey",
+          "localized_name": "apikey",
+          "name": "apikey",
+          "type": "STRING",
+          "widget": {
+            "name": "apikey"
+          },
+          "link": 293
+        },
+        {
+          "label": "state",
+          "localized_name": "state",
+          "name": "state",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "state"
+          },
+          "link": 294
+        },
+        {
+          "label": "seed",
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            295
+          ]
+        },
+        {
+          "label": "response",
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "image_url",
+          "localized_name": "image_url",
+          "name": "image_url",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Comfly_HaoeeImage_Midjourney",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "NIJI_JOURNEY",
+        "",
+        "",
+        0,
+        "randomize"
+      ]
+    },
+    {
+      "id": 99,
+      "type": "Comfly_HaoeeImage_Doubao_Seedream",
+      "pos": [
+        1965.226672167431,
+        -130.16462864523618
+      ],
+      "size": [
+        400,
+        316
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 2,
+      "inputs": [
+        {
+          "label": "image1",
+          "localized_name": "image1",
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 296
+        },
+        {
+          "label": "image2",
+          "localized_name": "image2",
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image3",
+          "localized_name": "image3",
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image4",
+          "localized_name": "image4",
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "prompt",
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 297
+        },
+        {
+          "label": "model",
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "response_format",
+          "localized_name": "response_format",
+          "name": "response_format",
+          "type": "COMBO",
+          "widget": {
+            "name": "response_format"
+          },
+          "link": null
+        },
+        {
+          "label": "size",
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "label": "apikey",
+          "localized_name": "apikey",
+          "name": "apikey",
+          "type": "STRING",
+          "widget": {
+            "name": "apikey"
+          },
+          "link": 298
+        },
+        {
+          "label": "seed",
+          "localized_name": "seed",
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            299
+          ]
+        },
+        {
+          "label": "response",
+          "localized_name": "response",
+          "name": "response",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "image_url",
+          "localized_name": "image_url",
+          "name": "image_url",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Comfly_HaoeeImage_Doubao_Seedream",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "",
+        "doubao-seedream-4-5-251128",
+        "url",
+        "2K",
+        "",
+        0,
+        "randomize"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "Fast Groups Muter (rgthree)",
+      "pos": [
+        1265.9559326171875,
+        -10.756393432617188
+      ],
+      "size": [
+        408,
+        250
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "OPT_CONNECTION",
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "pale_blue",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "always one",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "color": "#2b4557",
+      "bgcolor": "#2b4557"
+    }
+  ],
+  "links": [
+    [
+      187,
+      32,
+      4,
+      69,
+      0,
+      "*"
+    ],
+    [
+      189,
+      40,
+      4,
+      69,
+      1,
+      "STRING"
+    ],
+    [
+      223,
+      32,
+      0,
+      77,
+      0,
+      "IMAGE"
+    ],
+    [
+      224,
+      69,
+      0,
+      77,
+      10,
+      "STRING"
+    ],
+    [
+      225,
+      21,
+      0,
+      77,
+      14,
+      "STRING"
+    ],
+    [
+      226,
+      77,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      266,
+      32,
+      0,
+      91,
+      0,
+      "IMAGE"
+    ],
+    [
+      267,
+      69,
+      0,
+      91,
+      4,
+      "STRING"
+    ],
+    [
+      268,
+      21,
+      0,
+      91,
+      7,
+      "STRING"
+    ],
+    [
+      271,
+      91,
+      0,
+      76,
+      0,
+      "IMAGE"
+    ],
+    [
+      277,
+      32,
+      0,
+      95,
+      0,
+      "IMAGE"
+    ],
+    [
+      278,
+      69,
+      0,
+      95,
+      10,
+      "STRING"
+    ],
+    [
+      279,
+      21,
+      0,
+      95,
+      14,
+      "STRING"
+    ],
+    [
+      280,
+      95,
+      0,
+      57,
+      0,
+      "IMAGE"
+    ],
+    [
+      281,
+      32,
+      0,
+      96,
+      0,
+      "IMAGE"
+    ],
+    [
+      282,
+      69,
+      0,
+      96,
+      4,
+      "STRING"
+    ],
+    [
+      283,
+      21,
+      0,
+      96,
+      6,
+      "STRING"
+    ],
+    [
+      284,
+      65,
+      0,
+      96,
+      7,
+      "STRING"
+    ],
+    [
+      285,
+      96,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      291,
+      32,
+      0,
+      98,
+      0,
+      "IMAGE"
+    ],
+    [
+      292,
+      69,
+      0,
+      98,
+      4,
+      "STRING"
+    ],
+    [
+      293,
+      21,
+      0,
+      98,
+      6,
+      "STRING"
+    ],
+    [
+      294,
+      63,
+      1,
+      98,
+      7,
+      "STRING"
+    ],
+    [
+      295,
+      98,
+      0,
+      54,
+      0,
+      "IMAGE"
+    ],
+    [
+      296,
+      32,
+      0,
+      99,
+      0,
+      "IMAGE"
+    ],
+    [
+      297,
+      69,
+      0,
+      99,
+      4,
+      "STRING"
+    ],
+    [
+      298,
+      21,
+      0,
+      99,
+      8,
+      "STRING"
+    ],
+    [
+      299,
+      99,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 4,
+      "title": "Mid-journey",
+      "bounding": [
+        1779.3544921875,
+        -642.2716674804688,
+        1079.8013916015625,
+        368.26007080078125
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "Seedream",
+      "bounding": [
+        1816.15771484375,
+        -194.34213256835938,
+        939.6025390625,
+        399.6000061035156
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "Banana-Pro",
+      "bounding": [
+        1753.2850341796875,
+        -1253.8094482421875,
+        1034.735595703125,
+        495.6000061035156
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "图生图",
+      "bounding": [
+        1833.7054443359375,
+        291.6836242675781,
+        803,
+        510
+      ],
+      "color": "#8A8",
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "文生图",
+      "bounding": [
+        2714.80859375,
+        287.49871826171875,
+        803,
+        510
+      ],
+      "color": "#8A8",
+      "flags": {}
+    },
+    {
+      "id": 9,
+      "title": "NIJI-journey",
+      "bounding": [
+        2932.008056640625,
+        -631.1572875976562,
+        1079.8013916015625,
+        368.26007080078125
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 10,
+      "title": "Banana-2",
+      "bounding": [
+        2912.259033203125,
+        -1239.4327392578125,
+        1034.735595703125,
+        495.6000061035156
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 11,
+      "title": "GPT Image2",
+      "bounding": [
+        2996.643798828125,
+        -216.97584533691406,
+        939.6025390625,
+        399.6000061035156
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "ds": {
+      "scale": 0.5644739300537773,
+      "offset": [
+        -734.2992968341674,
+        701.7275603200873
+      ]
+    },
+    "frontendVersion": "1.44.19",
+    "links_added_by_ue": [],
+    "workflowRendererVersion": "LG",
+    "publicNote": "Public display copy: attribution and promotional notes removed."
+  },
+  "version": 0.4
+}
